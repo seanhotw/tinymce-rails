@@ -3,7 +3,7 @@ module TinyMCE::Rails
     config.tinymce = ActiveSupport::OrderedOptions.new
     
     # Set an explicit base path for TinyMCE assets (usually defaults to /assets/tinymce)
-    config.tinymce.base = nil
+    config.tinymce.base = "/assets/tinymce"
 
     initializer "precompile", :group => :all do |app|
       app.config.assets.precompile << "tinymce.js"
